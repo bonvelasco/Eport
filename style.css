@@ -1,0 +1,422 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --tertiary: #1b2230;
+  --misc: #313D4D;
+}
+
+.intro {
+  background: #ffffff;
+  height: 100svh;
+}
+
+.menu1 a {
+  color: var(--tertiary);
+  text-decoration: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.mainLeft h1 {
+  margin: 160px 0 15px 45px;
+  font-size: 43px;
+  color: var(--misc);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+#contact {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: var(--tertiary);
+  font-size: 14px;
+  margin-left: 45px;
+}
+
+.mainCenter img {
+  position: absolute;
+  height: 680px;
+  width: 375px;
+  margin-top: -100px;
+  filter: brightness(105%);
+  filter: drop-shadow(-4px -13px 25px #000);
+}
+
+.mainRight h2 {
+  position: relative;
+  margin-top: 115px;
+  margin-bottom: 10px;
+  color: var(--misc);
+  font-size: 28px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.mainRight p {
+  color: var(--tertiary);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  z-index: 1;
+}
+
+.paralax {
+  background-image: linear-gradient(rgba(29, 35, 124, 0.519), rgba(10, 10, 10, 0.2)), url(assets/national-cancer-institute-KMvoHcB-w5g-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*LEARNING SECTION*/
+.learning {
+  height: 80svh;
+  background: gray;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.learncontainer {
+  margin-top: 30px;
+  grid-row-gap: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-items: center;
+}
+
+.card {
+  text-align: center;
+  margin: 0 15px 0 15px;
+  height: 16rem;
+  width: 16rem;
+  transition: ease 0.4s;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+  scale: 1.15;
+  box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+  -webkit-box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+  -moz-box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+}
+
+#icon {
+  font-size: 80px;
+}
+
+.details {
+  margin-top: 55px;
+}
+
+.details h3 {
+  margin-top: 25px;
+}
+
+.details p {
+  font-size: 14px;
+}
+
+.education {
+  height: 70svh;
+  background: var(--tertiary);
+}
+
+.educontainer {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.school {
+  text-align: center;
+  justify-items: center;
+  margin: 0 10px 0 10px;
+}
+
+.school h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.school p {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+
+.school img {
+  height: 180px;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.school #hs {
+  filter: brightness(80%);
+}
+
+.school img:hover, #hs:hover {
+  scale: 1.12;
+  filter: drop-shadow(5px -5px 25px #fff989);
+}
+
+.family {
+  background: var(--primary);
+  height: 140svh;
+}
+
+.famintro {
+  text-align: center;
+  color: var(--tertiary);
+}
+
+.familycontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-items: center;
+}
+
+.family h1 {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: var(--tertiary);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.fam {
+  text-align: center;
+  margin: 25px 5px 25px 5px;
+  color: var(--tertiary);
+}
+
+.fam h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.fam p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+#person {
+  height: 200px;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+#person:hover {
+  scale: 1.05;
+  filter: drop-shadow(6px 24px 14px #000);
+}
+
+.navigation {
+  height: 50px;
+  background: transparent;
+}
+
+.brand {
+  position: absolute;
+  float: left;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-left: 25px;
+}
+.brand a,
+.brand a:visited {
+  color: var(--tertiary);
+  text-decoration: none;
+}
+
+.nav-container {
+  margin: 0;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin-right: 85px;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 50px;
+  background: transparent;
+  color: var(--tertiary);
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #d7c906;
+  color: var(--tertiary);
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 50px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: var(--tertiary);
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.purptitle {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: var(--tertiary);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.purplist {
+  text-align: center;
+  line-height: 35px;
+}
+
+.statement {
+  background: var(--tertiary);
+  height: 60svh;
+}
+
+.statetitle {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.statement p {
+  text-align: center;
+  line-height: 35px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

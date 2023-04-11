@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary: #ffffff;
+    --secondary: #000000;
+    --tertiary: #1b2230;
+    --misc: #313D4D;
+}
+
+.intro {
+    background: #ffffff;
+    height: 100svh;
+}
+
+.menu1 a {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.mainLeft h1 {
+    margin: 160px 0 15px 45px;
+    font-size: 43px;
+    color: var(--misc);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+#contact {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--tertiary);
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+.mainCenter img {
+    position: absolute;
+    height: 680px;
+    width: 375px;
+    margin-top: -100px;
+    filter: brightness(105%);
+    filter: drop-shadow(-4px -13px 25px #000);
+}
+
+.mainRight h2 {
+    position: relative;
+    margin-top: 115px;
+    margin-bottom: 10px;
+    color: var(--misc);
+    font-size: 28px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.mainRight p {
+    color: var(--tertiary);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    z-index: 1;
+}
+
+.paralax {
+    background-image: linear-gradient(rgba(29, 35, 124, 0.519), rgba(10, 10, 10, 0.2)), url(assets/national-cancer-institute-KMvoHcB-w5g-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/*LEARNING SECTION*/
+
+.learning {
+    height: 80svh;
+    background: gray;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    padding: 25px 0 30px 0;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.learncontainer {
+    margin-top: 30px;
+    grid-row-gap: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-items: center;
+}
+
+.card {
+    text-align: center;
+    margin: 0 15px 0 15px;
+    height: 16rem;
+    width: 16rem;
+    transition: ease .4s;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+    scale: 1.15;
+    box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+    -webkit-box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+    -moz-box-shadow: -1px 3px 19px 11px rgba(26, 26, 26, 0.75);
+}
+
+#icon {
+    font-size: 80px;
+}
+
+.details {
+    margin-top: 55px;
+}
+
+.details h3 {
+    margin-top: 25px;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+.education {
+    height: 70svh;
+    background: var(--tertiary);
+}
+
+.educontainer {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.school {
+    text-align: center;
+    justify-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.school h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.school p {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
+
+.school img {
+    height: 180px;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+.school #hs {
+    filter:brightness(80%);
+}
+
+.school img:hover, #hs:hover {
+    scale: 1.12;
+    filter: drop-shadow(5px -5px 25px #fff989);
+}
+
+.family {
+    background: var(--primary);
+    height: 140svh;
+}
+
+.famintro {
+    text-align: center;
+    color: var(--tertiary);
+}
+
+.familycontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-items: center;
+}
+
+.family h1 {
+    text-align: center;
+    font-size: 42px;
+    padding: 25px 0 30px 0;
+    color: var(--tertiary);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fam {
+    text-align: center;
+    margin: 25px 5px 25px 5px;
+    color: var(--tertiary);
+}
+
+.fam h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.fam p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+#person {
+    height: 200px;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+#person:hover {
+    scale: 1.05;
+    filter: drop-shadow(6px 24px 14px #000);
+}
+
+
+
+
+
+
+
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 50px;
+$nav-background: transparent;
+$nav-font-color: var(--tertiary);
+$link-hover-color: #d7c906;
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+}
+
+// Logo and branding
+.brand {
+  position: absolute;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-left: 25px;
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav-container {
+  margin: 0;
+}
+
+// Navigation 
+nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin-right: 85px;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: $breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+.purptitle {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: var(--tertiary);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.purplist {
+  text-align: center;
+  line-height: 35px;
+}
+
+.statement {
+  background: var(--tertiary);
+  height: 60svh;
+}
+
+.statetitle {
+  text-align: center;
+  font-size: 42px;
+  padding: 25px 0 30px 0;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.statement p {
+  text-align: center;
+  line-height: 35px;
+  color: #ffffff;
+}
